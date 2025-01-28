@@ -18,4 +18,14 @@ int main(){
 	return 0;
 }
 
-//Do not modify source code above this line
+void shuffle(int &a,int &b,int &c,int &d) {
+    int nongsea[] ={a,b,c,d};
+    for (int nongkarn = 3;nongkarn > 0;nongkarn--){
+        int j = rand() % (j + 1);
+        swap(nongsea[nongkarn],nongsea[j]);
+    }
+    a=nongsea[0];
+    b=nongsea[1];
+    c=nongsea[2];
+    d=nongsea[3];
+}
